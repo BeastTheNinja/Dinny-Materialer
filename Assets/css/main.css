@@ -81,6 +81,9 @@ img{
 .aboutDinny p {
     margin: 1rem;
     margin-left: 0;
+    padding: 0 1rem 0 0;
+    line-height: 1.5;
+    font-size: 1.2rem;
 }
 .aboutDinny footer{
     display: flex;
@@ -123,16 +126,17 @@ img{
     margin-left: 0;
 }
 .theStaff p {
-    margin: 1rem;
-    margin-left: 0;
+ margin: 1rem;
+  margin-left: 0;
+  padding: 0 1rem 0 0;
+  line-height: 1.5;
+  font-size: 1.2rem;
 }
 .theStaff footer{
     display: flex;
     justify-content: end;
     margin: 1rem;
     margin-right: 0;
-
-    
 }
 .theStaff footer a{
     list-style: none;
@@ -162,6 +166,9 @@ img{
 .delivery p {
     margin: 1rem;
     margin-left: 0;
+    padding: 0 1rem 0 0;
+    line-height: 1.5;
+    font-size: 1.2rem;
 }
 .delivery footer{
     display: flex;
