@@ -1,0 +1,35 @@
+.globalNav{
+    padding: 0.5rem;
+    background-color: var(--dark);
+}
+.globalNav ul{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+.globalNav a{
+    display: block;
+    text-decoration: none;
+    color: var(--warning);
+    background-color: var(--dark);
+    padding: 0.3rem 1rem;
+    transition: 400ms ease-in-out;
+}
+.globalNav ul:last-of-type li a {
+    color: var(--primary);
+}
+.globalNav ul:last-of-type li:last-of-type a {
+    color: var(--success);
+}
+.globalNav a:hover{
+    filter: contrast(2) hue-rotate(180deg);
+}
+@media (min-width: 1300px){
+    .globalNav ul{
+        flex-direction: row;
+    }
+    .globalNav{
+         display: flex;
+        justify-content: space-between;
+    }
+}

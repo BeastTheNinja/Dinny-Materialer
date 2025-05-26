@@ -1,0 +1,453 @@
+/* #region imports  */
+/* CSS imports */
+@import url(reset.css);
+@import url(nav.css);
+/* IMPORTS A "GOOGLE FONT" */
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100;200;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Creepster&display=swap');
+/* #endregion */
+/* #region global colors */
+/* VARIABLES IN HTML: */
+:root {
+    --light: #ddd;
+    --medium: #999;
+    --dark: #333;
+    --black: #212121;
+    --primary: #4ae;
+    --secondary: #ddd;
+    --danger: #bb1818;
+    --warning: #ef5400;
+    --success: #3b833b;
+    /* BUTTONS */
+    --static: #aaaaaa;
+    --active: #357baa;
+}
+/* #endregion */
+/* #region GLOBAL STYLES */
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family:'Smooch Sans', sans-serif; /*"SMOOCH SANS" IS A GOOGLE FONT*/
+    font-weight: 400;
+    background-color: var(--black);
+    color: var(--light);
+}
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+/* #endregion */
+/* #region HEADER IMAGE H1  */
+.headMain{
+    position: relative;
+}
+.headMain img{
+    position: relative;
+}
+.headMain h1{
+    position: absolute;
+    top: 65%;
+    left: 1%;
+    background-color: var(--light);
+    color: var(--danger);
+    font-size: 6rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-weight: bold;
+}
+/* #endregion  */
+/* #region SECTION ABOUT DINNY */
+.aboutDinny{
+    margin: 0.5rem;
+    margin-top: 0;
+    padding: 0.5rem;
+    padding-top: 0;
+}
+.aboutDinny h2{
+    color: var(--warning);
+    font-size: 3rem;
+    margin: 1.5rem;
+    margin-top: 0.5rem;
+    margin-left: 0;
+}
+.aboutDinny h3{
+    color: var(--active);
+    font-size: 2rem;
+    margin: 1rem;
+    margin-left: 0;
+}
+.aboutDinny p {
+    margin: 1rem;
+    margin-left: 0;
+}
+.aboutDinny footer{
+    display: flex;
+    justify-content: end;
+    
+}
+.aboutDinny footer a{
+    list-style: none;
+    color: var(--static);   
+}
+/* #endregion */
+/* #region STAFF */
+.theStaff{
+    margin: 0.5rem;
+    margin-top: 0;
+    padding: 0.5rem;
+    padding-top: 0;
+}
+.theStaff h2{
+    color: var(--warning);
+    font-size: 3rem;
+    margin: 1.5rem;
+    margin-top: 0.5rem;
+    margin-left: 0;
+}
+.theStaff > div{
+    display: grid;
+    gap: 1rem;
+}
+.theStaff figure{
+    display: grid;
+}
+.theStaff figure figcaption{
+    padding: 0 1rem;
+}
+.theStaff h3{
+    color: var(--active);
+    font-size: 2rem;
+    margin: 1rem;
+    margin-left: 0;
+}
+.theStaff p {
+    margin: 1rem;
+    margin-left: 0;
+}
+.theStaff footer{
+    display: flex;
+    justify-content: end;
+    margin: 1rem;
+    margin-right: 0;
+
+    
+}
+.theStaff footer a{
+    list-style: none;
+    color: var(--static);   
+}
+/* #endregion */
+/* #region DELIVERY */
+.delivery{
+    margin: 0.5rem;
+    margin-top: 0;
+    padding: 0.5rem;
+    padding-top: 0;
+}
+.delivery h2{
+    color: var(--warning);
+    font-size: 3rem;
+    margin: 1.5rem;
+    margin-top: 0.5rem;
+    margin-left: 0;
+}
+.delivery h3{
+    color: var(--active);
+    font-size: 2rem;
+    margin: 1rem;
+    margin-left: 0;
+}
+.delivery p {
+    margin: 1rem;
+    margin-left: 0;
+}
+.delivery footer{
+    display: flex;
+    justify-content: end;
+    margin: 1rem;
+    margin-right: 0;
+
+    
+}
+.delivery footer a{
+    list-style: none;
+    color: var(--static);   
+}
+/* #endregion */
+/* #region modal visning */
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0; 
+    top: 0;
+    width: 100%; height: 100%;
+    background-color: #00000080;
+  }
+  
+  .modal-content {
+    position: fixed;
+    left: 15%; 
+    top: -7%;
+    justify-content: center;
+    background-color: var(--dark);
+    margin: 12% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 0 10px #0000004d;
+  }
+  
+  .modal-content h2 {
+    margin-top: 0;
+  }
+  
+  .modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+    .modal-content textarea,
+    .modal-content select,
+    .modal-content input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: inherit;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    }
+
+    .modal-content select {
+    background-color: #f0f0f0;
+    }
+
+    .modal-content textarea {
+    resize: none;
+    }
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .close {
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  .error {
+  color: red;
+  font-size: 0.9em;
+}
+input.invalid, textarea.invalid {
+  border: 2px solid red;
+}
+ /* #endregion */
+ /* #region DINNY GALLERY */
+ .gallery{
+    margin: 0.5rem;
+    margin-top: 0;
+    padding: 0.5rem;
+    padding-top: 0;
+ }
+ .gallery h2{
+    color: var(--warning);
+    font-size: 3rem;
+    margin: 1.5rem;
+    margin-top: 0.5rem;
+    margin-left: 0;
+ }
+ .gallery figure{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+ }
+ /* #endregion */
+ /* #region FOOTER */
+ .mainFooter{
+    margin: 0.5rem;
+    margin-top: 0;
+    padding: 0.5rem;
+    padding-top: 0;
+ }
+ .mainFooter h2{
+    color: var(--warning);
+    font-size: 3rem;
+    margin: 1.5rem;
+    margin-top: 0.5rem;
+    margin-left: 0;
+ }
+ .mainFooter p,a{
+    font-size: 1.5rem;
+ }
+ /* #endregion */
+ /* #region media queries */
+ /* tablet  */
+ @media (min-width: 768px){
+   .theStaff figure{
+    grid-template-columns: repeat(2, 1fr);
+}
+   .gallery figure{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   }
+ }
+/* Desktop visning */
+@media (min-width: 1300px) {
+    .theStaff > div{
+        grid-template-columns: repeat(3, 1fr);
+    }
+   .theStaff figure{
+    display: block;
+}
+    /* #region header */
+  /* HEADER */
+  .headMain {
+    position: relative;
+  }
+
+  .headMain h1 {
+    font-size: 8rem;
+    top: 82%;
+    left: 1%;
+  }
+  /* #endregion */
+  /* #region dinny + delivery */
+  /* ABOUT DINNY + DELIVERY - sammensatte layout */
+  .aboutDinny figure,
+  .delivery figure {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .aboutDinny img,
+  .delivery img {
+    width: 50%;
+    max-width: 600px;
+    height: auto;
+  }
+
+  .aboutDinny figcaption,
+  .delivery figcaption {
+    width: 50%;
+  }
+  /* #endregion */
+  /* #region THE STAFF: grid med 3 figurer ved siden af hinanden */
+
+  /* #endregion */
+  /* #region GALLERY: 4 kolonner */
+  .gallery figure {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  /* #endregion */
+  /* #region footer */
+  /* FOOTER */
+  .mainFooter {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .mainFooter > div:first-child {
+    flex: 2;
+  }
+
+  .mainFooter > div:last-child {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1rem;
+  }
+
+  .mainFooter iframe {
+    width: 100%;
+    height: 300px;
+  }
+
+  .mainFooter h2 {
+    margin-top: 0;
+  }
+
+  .mainFooter address {
+    margin: 0;
+  }
+  /* #endregion */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0; 
+    top: 0;
+    width: 100%; height: 100%;
+    background-color: #00000080;
+  }
+  
+  .modal-content {
+    position: fixed;
+    left: 30%; 
+    top: -15%;
+    justify-content: center;
+    background-color: var(--dark);
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 0 10px #0000004d;
+  }
+  
+  .modal-content h2 {
+    margin-top: 0;
+  }
+  
+  .modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+    .modal-content textarea,
+    .modal-content select,
+    .modal-content input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: inherit;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    }
+
+    .modal-content select {
+    background-color: #f0f0f0;
+    }
+
+    .modal-content textarea {
+    resize: vertical;
+    }
+
+  
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .close {
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+  }
+}
+
+/* #endregion */

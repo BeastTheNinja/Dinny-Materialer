@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Assets/css/hej.css">
+    <script src="Assets/js/hej.js" defer></script>
+</head>
+<body>
+        <a href="#Order">Order</a>
+</body>
+<div id="kontaktModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Ordre</h2>
+      <!-- INDSÆT dette direkte i din eksisterende HTML-form -->
+<form id="kontaktForm" novalidate>
+  <label for="navn">Fulde Navn:</label>
+  <input type="text" id="navn" name="navn">
+  <small class="error" id="navnError"></small>
+
+  <label for="telefon">Tlf. nummer:</label>
+  <input type="tel" id="telefon" name="telefon">
+  <small class="error" id="telefonError"></small>
+
+  <label for="email">E-mail:</label>
+  <input type="email" id="email" name="email">
+  <small class="error" id="emailError"></small>
+
+  <label for="ordre">Din bestilling:</label>
+  <textarea id="ordre" name="ordre" rows="4"></textarea>
+  <small class="error" id="ordreError"></small>
+
+  <button type="submit">submit</button>
+  <!-- resten af formularen... -->
+</form>
+
+    </div>
+  </div>
+</html>
