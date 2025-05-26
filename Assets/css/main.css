@@ -313,7 +313,8 @@ input.invalid, textarea.invalid {
  .mainFooter iframe{
     width: 180%;
     height: 300px;
- }
+  }
+}
 /* Desktop visning */
 @media (min-width: 1300px) {
     .theStaff > div{
@@ -464,5 +465,4 @@ input.invalid, textarea.invalid {
     cursor: pointer;
   }
 }
- }
 /* #endregion */
