@@ -357,9 +357,6 @@ input.invalid, textarea.invalid {
     width: 50%;
   }
   /* #endregion */
-  /* #region THE STAFF: grid med 3 figurer ved siden af hinanden */
-
-  /* #endregion */
   /* #region GALLERY: 4 kolonner */
   .gallery figure {
     display: grid;
@@ -400,8 +397,8 @@ input.invalid, textarea.invalid {
     margin: 0;
   }
   /* #endregion */
-  /* #region modal visning */
-.modal {
+/* #region modal visning  */
+  .modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -466,4 +463,5 @@ input.invalid, textarea.invalid {
     cursor: pointer;
   }
 }
+/* #endregion */
 /* #endregion */
