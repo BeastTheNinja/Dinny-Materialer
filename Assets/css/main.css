@@ -305,6 +305,14 @@ input.invalid, textarea.invalid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
    }
+   .mainFooter{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15rem;
+ }
+ .mainFooter iframe{
+    width: 180%;
+    height: 300px;
  }
 /* Desktop visning */
 @media (min-width: 1300px) {
@@ -456,5 +464,5 @@ input.invalid, textarea.invalid {
     cursor: pointer;
   }
 }
-
+ }
 /* #endregion */
