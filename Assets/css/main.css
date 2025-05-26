@@ -400,6 +400,7 @@ input.invalid, textarea.invalid {
     margin: 0;
   }
   /* #endregion */
+  /* #region modal visning */
 .modal {
     display: none;
     position: fixed;
@@ -461,7 +462,7 @@ input.invalid, textarea.invalid {
   
   .close {
     float: right;
-    font-size: 28px;
+    font-size: 2.5rem;
     cursor: pointer;
   }
 }
